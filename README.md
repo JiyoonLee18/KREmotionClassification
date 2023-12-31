@@ -12,7 +12,7 @@
     - my_model.h5: 감정 분류 모델
     - scaler.pkl: 스케일러 모델
     - text_model_name.txt: 사용한 sbert 모델
-  - 1. preprocessing.ipynb: wav파일 샘플링 및 feature 추출 및 저장
-  - 2. modeling.ipynb: tensorflow==2.10.1 로 모델 학습 및 저장
-  - 3. predict.ipynb: cpu환경에서 모델 불러오기 및 새로운 데이터 예측 예시 노트북 파일
+  - 1\. preprocessing.ipynb: wav파일 샘플링 및 feature 추출 및 저장
+  - 2\. modeling.ipynb: tensorflow==2.10.1 로 모델 학습 및 저장
+  - 3\. predict.ipynb: cpu환경에서 모델 불러오기 및 새로운 데이터 예측 예시 노트북 파일
   - utils.py: 함수 저장 파일
