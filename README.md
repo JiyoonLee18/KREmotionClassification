@@ -14,5 +14,13 @@
     - text_model_name.txt: 사용한 sbert 모델
   - 1\. preprocessing.ipynb: wav파일 샘플링 및 feature 추출 및 저장
   - 2\. modeling.ipynb: tensorflow==2.10.1 로 모델 학습 및 저장
+    - 학습 환경
+        - python==3.10
+        - tensorflow==2.10.1
+        - keras==2.10.0
   - 3\. predict.ipynb: cpu환경에서 모델 불러오기 및 새로운 데이터 예측 예시 노트북 파일
+    - 예측 환경
+        - python==3.10
+        - tensorflow-cpu==2.10.1
+        - keras==2.10.0
   - utils.py: 함수 저장 파일
