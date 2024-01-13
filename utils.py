@@ -93,3 +93,16 @@ class text_embedding():
         embedding_vec = embedding_model.encode(X['sentence'])
         X_val = np.concatenate((X.drop(['final_label', 'wav_id', 'sentence'], axis = 1), embedding_vec), axis = 1)
         return X_val
+  
+class text_embedding_api():
+  def __init__(self, model_name):
+    self.model_name = model_name
+
+  def fit(self, X, y=None):
+        return self
+
+  def transform(self, X):
+        embedding_model = SentenceTransformer(self.model_name)
+        embedding_vec = embedding_model.encode(X['sentence'])
+        X_val = np.concatenate((X.drop(['sentence'], axis = 1), embedding_vec), axis = 1)
+        return X_val
