@@ -10,8 +10,7 @@ from sentence_transformers import SentenceTransformer
 from utils import get_features, text_embedding_api
 
 # 모델 경로 설정
-current_path=os.getcwd().replace("\\", "/").replace("c:", "C:")
-model_path = current_path+'/model/'  # 모델 파일이 위치한 경로를 설정해야 합니다.
+model_path = './model/'  # 모델 파일이 위치한 경로를 설정해야 합니다.
 
 # 모델 로드
 model = load_model(model_path+'my_model.h5')
